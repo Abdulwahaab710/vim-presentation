@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Seriously, vim is awesome
+
+
+---
+
+# About me
+
+```sh
+alias Abdul='Abdulwahaab'
+```
+
+CompSci Student @ uOttawa
+
+Intern in the SecDevOps team
+
+Links: `www.[a-z]*.com\/abdulwahaab710`
+
+
+---
+
+# Why VIM is Awesome?
+- You can automate the boring stuff and make more interesting
+- Makes you more efficient
+- You can write your own plugins in Python or Ruby
+
+---
+
+## Want to learn vim?
+- Stop giving up
+- You got this
+- Join #vim on slack
+- Don’t be afraid to ask questions
+- And don’t give up
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+  </script>
+  <script charset="utf-8">
+      function readTextFile(file)
+        {
+          var rawFile = new XMLHttpRequest();
+          rawFile.open("GET", file, false);
+          rawFile.onreadystatechange = function ()
+          {
+            if(rawFile.readyState === 4)
+            {
+              if(rawFile.status === 200 || rawFile.status == 0)
+              {
+                var allText = rawFile.responseText;
+                alert(allText);
+              }
+            }
+          }
+          rawFile.send(null);
+        }
+        readTextFile('/presentation.md')
+  </script>
+  </body>
+</html>
